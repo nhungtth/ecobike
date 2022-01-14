@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="-1.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefHeight="458.0" prefWidth="599.0">
+         <items>
+            <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="124.0" prefWidth="678.0" style="-fx-background-color: #dcdfe1; -fx-border-color: #35bf26;">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="122.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../../../assets/images/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="24.0" layoutY="85.0" text="EcobikeRental" textFill="#23a834">
+                     <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="397.0" layoutY="11.0" text="admin" textFill="#23a834">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeLabel" layoutX="470.0" layoutY="11.0" text="Bike: " textFill="#23a834">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="175.0" layoutY="47.0" text="BIKE" textFill="#23a834">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="346.0" prefWidth="682.0" style="-fx-background-color: #fff; -fx-border-color: #4f91cf;">
+               <children>
+                  <Button fx:id="cancelBtn" layoutX="379.0" layoutY="274.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #e20909;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="261.0" layoutY="27.0" text="BIKE INFO" textFill="#23a834">
+                     <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="rentBtn" layoutX="197.0" layoutY="274.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #23a834;" text="Rent" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <GridPane layoutX="128.0" layoutY="70.0" prefHeight="179.0" prefWidth="367.0" style="-fx-border-color: #23a834; -fx-border-radius: 5px; -fx-border-width: 2px;" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="104.0" AnchorPane.topAnchor="69.0">
+                    <columnConstraints>
+                      <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="32.0" text="ID: ">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="58.0" text="Station:" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="68.0" text="Address:" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Type: " GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="51.0" text="Dock: " GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="id" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.75698852539062" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="type" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.75698852539062" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="address" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.75698852539062" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="dock" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.75698852539062" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="station" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.75698852539062" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Label prefHeight="32.0" prefWidth="51.0" text="Status:" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Segoe UI" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="status" strokeType="OUTSIDE" strokeWidth="0.0" text="Available" wrappingWidth="149.75698852539062" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Segoe UI Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

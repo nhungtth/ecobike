@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="575.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="-1.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefHeight="575.0" prefWidth="900.0">
+         <items>
+            <AnchorPane maxHeight="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="124.0" prefWidth="776.0" style="-fx-background-color: #dcdfe1; -fx-border-color: #35bf26;">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="122.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../../../assets/images/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="24.0" layoutY="85.0" text="EcobikeRental" textFill="#23a834">
+                     <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="639.0" layoutY="11.0" text="admin" textFill="#23a834">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bikeLabel" layoutX="701.0" layoutY="11.0" text="Bike:" textFill="#23a834">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="175.0" layoutY="47.0" text="RENT TRANSACTION" textFill="#23a834">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="443.0" prefWidth="898.0" style="-fx-background-color: #fff; -fx-border-color: #4f91cf;">
+               <children>
+                  <Button fx:id="btnConfirm" layoutX="565.0" layoutY="383.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #23a834;" text="Confirm" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" layoutX="804.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#goHome" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #e20909;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Line endX="105.00018310546875" endY="176.80001831054688" layoutX="408.0" layoutY="163.0" startX="105.0001220703125" startY="-132.80001831054688" stroke="#23a834" strokeWidth="2.0" />
+                  <Label layoutX="565.0" layoutY="57.0" text="Card Number:">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cardNumber" layoutX="565.0" layoutY="76.0" prefHeight="40.0" prefWidth="303.0" style="-fx-border-color: #23a834;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <Label layoutX="565.0" layoutY="121.0" prefHeight="46.0" prefWidth="159.0" text="Card Holder Name:" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="565.0" layoutY="208.0" prefHeight="42.0" prefWidth="158.0" text="Expiration Date:" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="565.0" layoutY="280.0" prefHeight="46.0" prefWidth="150.0" text="Card Security Code:" wrapText="true">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="holderName" layoutX="565.0" layoutY="158.0" prefHeight="40.0" prefWidth="303.0" style="-fx-border-color: #23a834;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="expirationDate" layoutX="565.0" layoutY="243.0" prefHeight="40.0" prefWidth="303.0" promptText="mm/yy" style="-fx-border-color: #23a834;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="securityCode" layoutX="565.0" layoutY="318.0" prefHeight="40.0" prefWidth="303.0" style="-fx-border-color: #23a834;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <Label layoutX="120.0" layoutY="86.0" prefHeight="32.0" prefWidth="125.0" text="User:">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="119.0" layoutY="134.0" text="Transaction Type: ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="176.0" layoutY="29.0" text="Transaction info" textFill="#23a834">
+                     <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="120.0" layoutY="162.0" prefHeight="32.0" prefWidth="125.0" text="Bike: ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="118.0" layoutY="204.0" prefHeight="32.0" prefWidth="54.0" text="Dock: ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="118.0" layoutY="245.0" prefHeight="32.0" prefWidth="82.0" text="Deposit">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="287.0" layoutY="205.0" prefHeight="32.0" prefWidth="60.0" text="Station: ">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="note" layoutX="189.0" layoutY="317.0" prefHeight="40.0" prefWidth="303.0" style="-fx-border-color: #23a834;">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextField>
+                  <Label layoutX="119.0" layoutY="321.0" prefHeight="32.0" prefWidth="60.0" text="Note:">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="username" layoutX="251.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="admin" wrappingWidth="192.15704345703125">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="type" layoutX="251.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="192.15704345703125">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="bikeId" layoutX="191.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="192.15704345703125">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="dockId" layoutX="181.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="51.357025146484375">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="station" layoutX="343.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.75698852539062">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="fees" layoutX="207.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.95703125">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="deposit" layoutX="251.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="88.95703125">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="329.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VND" wrappingWidth="88.95703125">
+                     <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

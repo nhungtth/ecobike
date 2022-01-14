@@ -1,0 +1,7 @@
+.classpath
+.project
+.vscode
+*.class
+/bin/
+*.ipynb
+test/notebook
